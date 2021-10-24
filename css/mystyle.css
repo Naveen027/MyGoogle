@@ -1,0 +1,96 @@
+
+#searchme{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    height: 60%;
+    width: 46%;
+    border: 1px solid grey;
+    border-radius: 30px;
+   }
+   
+   h1{
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   
+   .google{
+       position: relative;
+       top: 85px;
+       margin-left: 115px;
+   }
+   
+   ul{
+       display: flex;
+       position: relative;
+       top: 15px;
+       /* left: 35%; */
+       margin-left: 30%;
+   }
+
+   ul li{
+       list-style:none;
+   }
+   
+   ul li h1{
+       font-size: 100px;
+       font-family: -webkit-pictograph;
+   }
+   
+   .rightPart{
+       float: right;
+       display: inline-block;
+       position: relative;
+       right: 10%;
+       top: -35px;
+   }
+   
+   .rightPart li{
+       padding: 10px;
+   }
+   
+   .rightPart li h4{
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-weight: lighter;
+   }
+   
+   .N{
+       background-color: rgb(32, 161, 32);
+       border-radius: 50%;
+       height: 30px;
+       width: 30px;
+       position:absolute;
+       left: 120.4%;
+       top: 25px;
+   }
+   
+   .images{
+       display: flex;
+       
+       margin-left: 540px;
+   }
+   
+   
+   .images li img{
+       height: 40px;
+       width: 40px;
+       padding: 11px;
+       /* margin-top: 10px; */
+       margin-left: 17px;
+       /* background-color: grey; */
+   }
+   
+   .images li img:hover{
+       background-color: rgb(180, 172, 172);
+   }
+   
+   #mike{
+       height: 20px;
+       width: 20px;
+       position: relative;
+       left: 470px;
+       margin-top: 44px;
+   }
+   
+   #btn{
+       visibility: hidden;
+   }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <div class="rightPart">
+        <ul>
+            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl">
+                    <h4>Gmail</h4>
+                </a></li>
+            <li><a href="https://www.google.co.in/imghp?hl=en&tab=ri&ogbl">
+                    <h4>Images</h4>
+                </a></li>
+            <div class="N"></div>
+            <li>
+                <h4 style="position: relative;">N</h4>
+            </li>
+        </ul>
+    </div>
+    <div class="google">
+        <ul>
+            <li>
+                <h1 style="color:#4285f4;">G</h1>
+            </li>
+            <li>
+                <h1 style="color:#ea4335;">o</h1>
+            </li>
+            <li>
+                <h1 style="color:#fbbc04;">o</h1>
+            </li>
+            <li>
+                <h1 style="color:#4285f4;">g</h1>
+            </li>
+            <li>
+                <h1 style="color:#34a853;">l</h1>
+            </li>
+            <li>
+                <h1 style="color:#ea4335;">e</h1>
+            </li>
+        </ul>
+
+    </div>
+    <div>
+        <ul>
+            <li> <input type="text" placeholder="Search Google or type a Url" id="searchme"></li>
+            <li><img src="images/mike.jpg" alt="" id="mike" onclick="search()"></li>
+            <!-- <li><img src="images/search.png" alt="" id="searchimage"></li> -->
+        </ul>
+        <button onclick="search()" id="btn">Search</button>
+    </div>
+    <div>
+        <ul class="images">
+            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl"><img src="images/gmail.png" alt="gmail"></a>
+            </li>
+            <li><a href="https://play.google.com/"><img src="images/playstore.png" alt="playstore"></a></li>
+            <li><a href="https://www.google.co.in/maps?hl=en&tab=rl"><img src="images/maps.png" alt="maps"></a></li>
+            <li><a href="https://one.google.com/"><img src="images/one.jpg" alt="one"></a></li>
+        </ul>
+        <div>
+            <ul class="images">
+                <li><a href="https://www.youtube.com/"><img src="images/yt.png" alt="youtube"></a></li>
+                <li><a href="https://chrome.google.com/webstore/category/extensions?hl=en"><img
+                            src="images/webstore.png" alt="webstore"></a></li> <br>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const takeinput = document.querySelector("#searchme");
+
+        takeinput.addEventListener("keydown", function (event) {
+            if (event.code === "Enter") {
+                search();
+            }
+        });
+
+        function search() {
+            const input = takeinput.value;
+
+            window.location.href = "https://www.google.com/search?q=" + input + "&oq=" + input + "&aqs=chrome..69i57j46i433i512j35i39l2j0i433i512l2j0i131i433j0i433i512j46i199i291i433i512l2.1593j0j7&sourceid=chrome&ie=UTF-8"
+        }
+    </script>
+</body>
+
+</html>
